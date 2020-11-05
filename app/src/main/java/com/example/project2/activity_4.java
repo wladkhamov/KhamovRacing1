@@ -8,14 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class activity_2 extends AppCompatActivity {
+public class activity_4 extends AppCompatActivity {
     private ImageButton button;
     private ImageButton button2;
     private ImageButton button4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_2);
+        setContentView(R.layout.activity_4);
 
         button = (ImageButton) findViewById(R.id.haus);
         button.setOnClickListener(new View.OnClickListener(){
@@ -33,7 +33,7 @@ public class activity_2 extends AppCompatActivity {
             }
         });
 
-        button4 = (ImageButton) findViewById(R.id.gallery);
+        button4 = (ImageButton) findViewById(R.id.imageButton5);
         button4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -50,7 +50,7 @@ public class activity_2 extends AppCompatActivity {
         startActivity(intent);
     }
     public void openActivity4(){
-        Intent intent = new Intent(this, activity_4.class);
+        Intent intent = new Intent(this, activity_2.class);
         startActivity(intent);
     }
 }
